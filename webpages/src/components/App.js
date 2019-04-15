@@ -7,6 +7,8 @@ import '../App.css';
 import Footer  from './Footer'
 import Header from "./Header";
 import Home from './Home'
+import Products from "./Products";
+import About from "./About";
 
 // reading Components
 // import Components from './components'
@@ -25,6 +27,9 @@ class App extends Component {
         <Header/>
           <Switch>
             <Route exact path = "/" component={Home}/>
+            <Route exact path = "/About" component={About}/>
+            <Route exact path = "/Products" component={Products}/>
+
           </Switch>
         <Footer/>
       </div>
