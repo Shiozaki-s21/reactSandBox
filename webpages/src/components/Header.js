@@ -14,6 +14,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import logo from '../res/logo-kazu.jpg'
+import { Link } from 'react-router-dom';
 
 // Icons
 import HomeIcon from '@material-ui/icons/Home'
@@ -21,7 +22,6 @@ import AboutMeIcons from '@material-ui/icons/Person'
 import SkilsIcon from '@material-ui/icons/LineStyle'
 import ProductIcon from '@material-ui/icons/Phonelink'
 import ContactMeIcon from '@material-ui/icons/MailOutline'
-import About from "./About";
 
 const drawerWidth = 200;
 
@@ -137,26 +137,35 @@ class Header extends React.Component {
 					{/*put link to another pages here*/}
 					{/*make more space */}
 					<List>
-						<a>
-						<ListItem>
-							<ListItemIcon><HomeIcon/></ListItemIcon>
-						</ListItem>
-						</a>
-						<ListItem>
-							<ListItemIcon><AboutMeIcons/></ListItemIcon>
-						</ListItem>
+						<Link to={"/"}>
+							<ListItem>
+								<ListItemIcon><HomeIcon></HomeIcon></ListItemIcon>
+							</ListItem>
+						</Link>
 
-						<ListItem>
-							<ListItemIcon><SkilsIcon/></ListItemIcon>
-						</ListItem>
+						<Link to={"/About"}>
+							<ListItem>
+								<ListItemIcon><AboutMeIcons/></ListItemIcon>
+							</ListItem>
+						</Link>
 
-						<ListItem>
-							<ListItemIcon><ProductIcon/></ListItemIcon>
-						</ListItem>
+						<Link to={"Skills"}>
+							<ListItem>
+								<ListItemIcon><SkilsIcon/></ListItemIcon>
+							</ListItem>
+						</Link>
 
-						<ListItem>
-							<ListItemIcon><ContactMeIcon/></ListItemIcon>
-						</ListItem>
+						<Link to={"Products"}>
+							<ListItem>
+								<ListItemIcon><ProductIcon/></ListItemIcon>
+							</ListItem>
+						</Link>
+
+						<Link to={"ContactMe"}>
+							<ListItem>
+								<ListItemIcon><ContactMeIcon/></ListItemIcon>
+							</ListItem>
+						</Link>
 					</List>
 
 
