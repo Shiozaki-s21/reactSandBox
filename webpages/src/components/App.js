@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 import {Route, Switch} from'react-router-dom'
 
 import '../App.css';
-import Footer  from './Footer'
 import Header from "./Header";
 import Home from './Home'
 import Products from "./Products";
 import About from "./About";
+import Skills from "./Skills";
 
 // reading Components
 // import Components from './components'
@@ -29,9 +29,10 @@ class App extends Component {
             <Route exact path = "/" component={Home}/>
             <Route exact path = "/About" component={About}/>
             <Route exact path = "/Products" component={Products}/>
+            <Route exact path = "/Skills" component={Skills}/>
 
           </Switch>
-        <Footer/>
+        {/*<Footer/>*/}
       </div>
     );
   }

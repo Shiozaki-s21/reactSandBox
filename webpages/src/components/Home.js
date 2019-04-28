@@ -7,7 +7,8 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Home</h2>
+				{/*Title -> "I'm Kazuya Takahashi"*/}
+				<h2>Hi, I'm Kazuya Takahashi</h2>
 			</div>
 		);
 	}
