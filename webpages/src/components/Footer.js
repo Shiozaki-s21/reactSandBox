@@ -21,16 +21,10 @@ const styles = theme => ({
 		zIndex: 1000,
 		textAlign: 'center',
 	},
-	// root: {
-	// 	[theme.breakpoints.up('md')]: {
-	// 		display: 'none',
-	// 	},
-	// },
 	button: {
 		maxWidth: '100%', // ボタンが横一杯に広がって欲しくない時はコメントアウト
 	},
 });
-
 
 class RouteRelatedBottomNavigation extends React.Component {
 	buttons_info = [
@@ -56,7 +50,6 @@ class RouteRelatedBottomNavigation extends React.Component {
 	render() {
 		// Material-ui関連
 		const { classes } = this.props;
-
 		return (
 			<div className={classes.wrapper}>
 				<BottomNavigation
@@ -73,33 +66,3 @@ class RouteRelatedBottomNavigation extends React.Component {
 export default withRouter(
 	withStyles(styles, { withTheme: true })(RouteRelatedBottomNavigation)
 );
-
-//
-// const styles = {
-// 	ul: {
-// 		listStyleType: 'none',
-// 		display: 'inline',
-// 	},
-// 	li: {
-// 		display: 'inline-block',
-// 		marginRight: '1em',
-// 	}
-// };
-//
-// class Footer extends Component {
-// 	render() {
-// 		return (
-// 			<div>
-// 				<ul className="header-link" style={styles.ul}>
-// 					<li style={styles.li}><Link to={"/"}>Home</Link></li>
-// 					<li style={styles.li}><Link to={"/About"}>About</Link></li>
-// 					<li style={styles.li}><Link to={"/Products"}>Products</Link></li>
-// 					<li style={styles.li}><Link to={"/Skills"}>Skills</Link></li>
-// 				</ul>
-// 			</div>
-// 		)
-// 	}
-// }
-//
-//
-// export default Footer;

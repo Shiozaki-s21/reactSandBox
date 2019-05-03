@@ -1,52 +1,35 @@
 import React from 'react'
-import { Component } from 'react'
-import PropTypes from "prop-types";
-import {withStyles} from "@material-ui/core";
-import logo from '../res/logo-kazu.jpg'
+import PropTypes from "prop-types"
+import {withStyles} from "@material-ui/core"
+import logo from '../res/logo-kazu.png'
+import paperWall from '../res/backGround.png'
+import  './pagesCss.css'
+import {BlackIcon, GreetingOnHomePage} from './Util'
 
 const styles = theme => ({
-	nameSpace:{
-		position: 'absolute',
-		left: '10%',
-		top: '50%',
-		transform: 'translateY(-50%)',
-		width: '40%',
-		maxHeight: '90%'
-	},
-	homeImageZone:{
-		align:'right',
-	},
-	homeImage:{
-		height: 400,
-		width: 400,
-		position: 'absolute',
-		zIndex: 0,
-		top: 0,
-		right: '15%',
-		bottom: 0,
-		left: 'auto',
-		margin: 'auto',
-	},
-	home:{
-		background: "#FFF"
+
+	root:{
+		backgroundImage: paperWall,
+		backgroundColor:"#FFFFFF"
 	}
 })
 
 
-class Home extends Component {
+class Home extends React.Component {
 
 	render() {
 		const { classes, theme } = this.props;
-
+		console.log(BlackIcon)
 		return (
-			<div className={classes.home}>
+			<div className={classes.root} >
 				{/*Title -> "I'm Kazuya Takahashi"*/}
-				<div className={classes.nameSpace}>
+				<GreetingOnHomePage>
 					<h1>Hello!! I'm Kazuya Takahashi</h1>
-					<h2>BackEnd-Engineer/iOS-Engineer/</h2>
-				</div>
-				<div className={classes.homeImageZone}>
-					<img className={classes.homeImage} src={logo}/>
+					<h2>BackEnd-Engineer/iOS-Engineer</h2>
+				</GreetingOnHomePage>
+				<div>
+					{/*<img className={classes.homeImage} src={logo}/>*/}
+					<BlackIcon src = {logo}/>
 				</div>
 
 			</div>
