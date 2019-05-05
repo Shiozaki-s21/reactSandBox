@@ -20,3 +20,23 @@ export const GreetingOnHomePage = styled.div`
 	transform: translateY(-50%);
 	width: 40%;
 	max-height: 90%;`;
+
+// components for footer
+
+export const FootTab = styled.div`
+	display: block;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	zIndex: 1000;
+	textAlign: center;
+	backgroundColor: #000000`
+
+// components for header
+
+// picture for me
+// size should be flexible
+
+// css for div for description for me
+// must be absolute

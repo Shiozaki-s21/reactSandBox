@@ -1,0 +1,11 @@
+.homeImage {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    zIndex: 0;
+    top: 0px;
+    right: 15%;
+    bottom: 0px;
+    left: auto;
+    margin: auto;
+}

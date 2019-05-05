@@ -5,6 +5,8 @@ import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
+import {FootTab} from "./Util";
+
 // Material-UIアイコン取得
 import HomeIcon from '@material-ui/icons/Home';
 import AboutIcon from '@material-ui/icons/Face';
@@ -12,17 +14,10 @@ import ProductIcon from '@material-ui/icons/ImportantDevices';
 import SkillsIcon from '@material-ui/icons/Keyboard';
 
 const styles = theme => ({
-	wrapper:{
-		display: 'block',
-		width: '100%',
-		position: 'fixed',
-		left: 0,
-		bottom: 0,
-		zIndex: 1000,
-		textAlign: 'center',
-	},
+
 	button: {
-		maxWidth: '100%', // ボタンが横一杯に広がって欲しくない時はコメントアウト
+		// about range for button
+		maxWidth: '100%',
 	},
 });
 
@@ -48,11 +43,11 @@ class RouteRelatedBottomNavigation extends React.Component {
 	})
 
 	render() {
-		// Material-ui関連
+		//  it's related with material-ui
 		const { classes } = this.props;
 		return (
 			<div className={classes.wrapper}>
-				<BottomNavigation
+				<FootTab
 					value={this.props.location.pathname}
 					showLabels
 					className={classes.root}
