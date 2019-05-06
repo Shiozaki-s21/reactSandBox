@@ -4,7 +4,7 @@ import {withStyles} from "@material-ui/core"
 import logo from '../res/logo-kazu.png'
 import paperWall from '../res/backGround.png'
 import  './pagesCss.css'
-import {BlackIcon, GreetingOnHomePage} from './Util'
+import { HomeTitle } from './Util'
 
 const styles = theme => ({
 
@@ -19,18 +19,11 @@ class Home extends React.Component {
 
 	render() {
 		const { classes, theme } = this.props;
-		console.log(BlackIcon)
 		return (
 			<div className={classes.root} >
-				{/*Title -> "I'm Kazuya Takahashi"*/}
-				<GreetingOnHomePage>
-					<h1>Hello!! I'm Kazuya Takahashi</h1>
-					<h2>BackEnd-Engineer/iOS-Engineer</h2>
-				</GreetingOnHomePage>
-				<div>
-					{/*<img className={classes.homeImage} src={logo}/>*/}
-					<BlackIcon src = {logo}/>
-				</div>
+				{/*create component for title*/}
+				<HomeTitle>AAA</HomeTitle>
+				{/*create comonent for menu*/}
 
 			</div>
 		);

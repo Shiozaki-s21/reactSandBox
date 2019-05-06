@@ -1,5 +1,14 @@
 // import modules
 import styled from 'styled-components'
+import WebFont from 'webfontloader';
+
+
+// font
+WebFont.load({
+	google: {
+		families: ['VT323', 'monospace']
+	}
+});
 
 // logo which is written by black ink
 export const BlackIcon = styled.img`
@@ -40,3 +49,12 @@ export const FootTab = styled.div`
 
 // css for div for description for me
 // must be absolute
+
+
+
+//component for title
+export const HomeTitle = styled.h1`
+	font-family: 'VT323', monospace;
+`
+
+

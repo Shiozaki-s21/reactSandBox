@@ -24,13 +24,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
-          <Switch>
-            <Route exact path = "/" component={Home}/>
-            <Route exact path = "/About" component={About}/>
-            <Route exact path = "/Products" component={Products}/>
-            <Route exact path = "/Skills" component={Skills}/>
-          </Switch>
+        <Switch>
+          <Route exact path = "/" component={Home}/>
+          <Route exact path = "/About" component={About}/>
+          <Route exact path = "/Products" component={Products}/>
+          <Route exact path = "/Skills" component={Skills}/>
+        </Switch>
         {/*<Footer/>*/}
       </div>
     );
