@@ -54,7 +54,31 @@ export const FootTab = styled.div`
 
 //component for title
 export const HomeTitle = styled.h1`
+	//TODO: To add animation
 	font-family: 'VT323', monospace;
+	color: #00ffff;
+	text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+	font-size: 100px;`
+
+export const HomeSubTitle = styled.h2`
+	font-family: 'VT323', monospace;
+	color: #EEE;
+	text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+	font-size:30px;`
+
+export const TitleBlock = styled.div`
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);`
+
+export const HomeMenuLink = styled.h3`
+	font-family: 'VT323', monospace;
+	color: #EEE;
+	margin: 0 auto;
+	text-font: 15px
 `
+
+
 
 

@@ -1,30 +1,60 @@
 import React from 'react'
 import PropTypes from "prop-types"
-import {withStyles} from "@material-ui/core"
-import logo from '../res/logo-kazu.png'
-import paperWall from '../res/backGround.png'
+
 import  './pagesCss.css'
-import { HomeTitle } from './Util'
+import { HomeTitle, HomeSubTitle, TitleBlock, HomeMenuLink } from './Util'
+import List from "@material-ui/core/List";
+import {Link} from "react-router-dom";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import HomeIcon from "@material-ui/core/SvgIcon/SvgIcon";
+import Drawer from "@material-ui/core/Drawer";
 
-const styles = theme => ({
+const linkList = ["Home", "About", "Works"]
 
-	root:{
-		backgroundImage: paperWall,
-		backgroundColor:"#FFFFFF"
-	}
-})
-
+let li
 
 class Home extends React.Component {
 
 	render() {
-		const { classes, theme } = this.props;
 		return (
-			<div className={classes.root} >
-				{/*create component for title*/}
-				<HomeTitle>AAA</HomeTitle>
-				{/*create comonent for menu*/}
+			<div>
+				<TitleBlock>
+					<HomeTitle><em>Kazuya Takahashi</em></HomeTitle>
+					<HomeSubTitle><em>This is my portfolio</em></HomeSubTitle>
+					{/*create list*/}
+					<List>
+						<Link to={"/"}>
+							<ListItem>
+								<HomeMenuLink>Home</HomeMenuLink>
+							</ListItem>
+						</Link>
 
+						<Link to={"/About"}>
+							<ListItem>
+								<HomeMenuLink>About</HomeMenuLink>
+							</ListItem>
+						</Link>
+
+						<Link to={"Skills"}>
+							<ListItem>
+								<HomeMenuLink>Skills</HomeMenuLink>
+							</ListItem>
+						</Link>
+
+						<Link to={"Products"}>
+							<ListItem>
+								<HomeMenuLink>Product</HomeMenuLink>
+							</ListItem>
+						</Link>
+
+						<Link to={"ContactMe"}>
+							<ListItem>
+								<HomeMenuLink>ContactMe</HomeMenuLink>
+							</ListItem>
+						</Link>
+					</List>
+				</TitleBlock>
 			</div>
 		);
 	}
@@ -36,4 +66,4 @@ Home.propTypes = {
 	theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, {withTheme: true})(Home)
+export default Home
