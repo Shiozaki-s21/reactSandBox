@@ -21,7 +21,7 @@ class Home extends React.Component {
 			<div>
 				<TitleBlock>
 					<HomeTitle><em>Kazuya Takahashi</em></HomeTitle>
-					<HomeSubTitle><em>This is my portfolio</em></HomeSubTitle>
+					<HomeSubTitle><em>Back-end Engineer/ Mobile Engineer</em></HomeSubTitle>
 					{/*create list*/}
 					<List>
 						<Link to={"/"}>
