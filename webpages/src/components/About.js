@@ -1,26 +1,26 @@
 import React from 'react'
 import { Component } from 'react'
 
+import {AboutTitle, MyPicture, AboutMeDescription} from './Util'
+import MyOwnPic from '../res/myOwnImg.png'
 
 class About extends Component {
 
     render() {
         return (
             <div>
-                {/*div for picture*/}
-                <div style={{marginLeft: '10%', marginTop: '5%'}}>
-                <div style={{backgroundColor: '#000000', height: '500px', width: '500px', float: 'left'}}>
-                </div>
-
-                {/*div for description about me */}
-                <div style={{}}>
-                    bblablablablablablablablablablablablalablablabla
-                    blablablablablablablablablablablablablablablablablablablabla
-                    blablablablablablablablablablablabla
-                    blablablablablablablablablablablablablablablablablablablabla
-                    blablablablablablablablablablablablablablablabla
-                </div>
-                </div>
+              {/*title*/}
+              <AboutTitle><em>About Me</em></AboutTitle>
+              {/*picture*/}
+              <MyPicture src={MyOwnPic}/>
+              {/*Description*/}
+              <AboutMeDescription>
+                blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+              </AboutMeDescription>
+              {/*links*/}
+              {/*git*/}
+              {/*linkdin*/}
+              {/*Medium*/}
             </div>
         );
     }

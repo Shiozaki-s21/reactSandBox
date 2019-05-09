@@ -79,6 +79,55 @@ export const HomeMenuLink = styled.h3`
 	text-font: 15px
 `
 
+export const LeftDescription = styled.span`
+  float: right;
+  width: 200px;
+  height: 400px;
+  shape-outside: polygon(200px 400px, 200px 200px, -0.5% 50%, 0px 400px);
+`
 
+export const RightDescription = styled.span`
+  float: left;
+  width: 200px;
+  height: 400px;
+  shape-outside: polygon(200px 400px, 200px 200px, -0.5% 50%, 0px 400px);
+`
 
+export const AboutP = styled.p`
+  text-align: justify;
+  hyphens: auto;
+  margin: 0;
+  color: #FFF
+`
 
+export const AboutDiv = styled.div`
+  width: 400px;
+  height: 400px;
+`
+export const AboutTitle = styled.h2`
+	font-family: 'VT323', monospace;
+	color: #00ffff;
+	text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+	font-size: 80px`
+
+export const MyPicture = styled.img`
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	// position: absolute;
+	// // zIndex: 0;
+	// top: 0px;
+	// bottom: 0;
+	// left: auto;
+	// margin: auto;
+`
+
+export const AboutMeDescription = styled.p`
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+	width: 60%;
+	word-wrap: break-word;
+	margin: auto;
+	color: white
+	
+`
