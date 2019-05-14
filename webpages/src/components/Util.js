@@ -129,5 +129,17 @@ export const AboutMeDescription = styled.p`
 	word-wrap: break-word;
 	margin: auto;
 	color: white
+`
+
+export const AboutLink = styled.a`
+	font-family: 'VT323', monospace;	
+	font-size: 50px;
+	color: ${props => props ? props.color : 'palevioletred'};
+	// to add home address insted of default
+	href => ${props => props.primary ? 'https://github.com/Shiozaki-s21' : 'palevioletred'};
+	
+	`
+
+export const LinkImage = styled.img`
 	
 `
