@@ -1,13 +1,16 @@
 import React from 'react'
 import { Component } from 'react'
-
+import {ProductTitle} from "./Util";
+import ProductCard from '../components/ProductCard'
 
 class Products extends Component {
 
     render() {
         return (
             <div>
-                <h2>Products</h2>
+                <ProductTitle>Products</ProductTitle>
+                    {/*list of products*/}
+                <ProductCard/>
             </div>
         );
     }

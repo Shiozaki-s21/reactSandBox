@@ -20,28 +20,14 @@ class Home extends React.Component {
 								<HomeMenuLink>Home</HomeMenuLink>
 							</ListItem>
 						</Link>
-
 						<Link to={"/About"}>
 							<ListItem>
 								<HomeMenuLink>About</HomeMenuLink>
 							</ListItem>
 						</Link>
-
-						<Link to={"Skills"}>
-							<ListItem>
-								<HomeMenuLink>Skills</HomeMenuLink>
-							</ListItem>
-						</Link>
-
 						<Link to={"Products"}>
 							<ListItem>
 								<HomeMenuLink>Product</HomeMenuLink>
-							</ListItem>
-						</Link>
-
-						<Link to={"ContactMe"}>
-							<ListItem>
-								<HomeMenuLink>ContactMe</HomeMenuLink>
 							</ListItem>
 						</Link>
 					</List>
